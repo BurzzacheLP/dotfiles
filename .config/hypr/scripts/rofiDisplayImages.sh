@@ -6,7 +6,7 @@
 
 # al final me pase a rofi y termine adaptando parte de un script de los dotfiles de otro chabon
 
-wallFolder="/home/lucho/Imágenes/Wallpapers"
+wallFolder="/home/lucho/wallpapers/"
 
 wallList=($(ls "$wallFolder"/*.{png,jpg,jpeg} | xargs -n1 basename))
 
