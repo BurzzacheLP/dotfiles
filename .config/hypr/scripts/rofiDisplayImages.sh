@@ -38,7 +38,7 @@ selectedWall=$(find "${wallFolder}" -type f \( -iname "*.jpg" -o -iname "*.jpeg"
 
 if [ -n "$selectedWall" ]; then
 	fullWall=$(find "$wallFolder" -name "$selectedWall" -type f)
-	swww img "$fullWall" --transition-type wipe
+	swww img "$fullWall" 
 	wal -i "$fullWall"
 	killall -SIGUSR2 waybar 
 fi

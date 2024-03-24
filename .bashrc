@@ -7,7 +7,10 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='[\u@\h \W]\$ '
+
+#PS1='[\u@\h \W]\$ '
+
+PS1='[\u@\h]=>(\W)\$ '
 
 snvim () {
     sudo -E nvim "$1"
