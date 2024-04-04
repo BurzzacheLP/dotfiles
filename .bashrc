@@ -18,3 +18,6 @@ snvim () {
 
 
 (cat ~/.cache/wal/sequences &)
+
+# Created by `pipx` on 2024-04-04 18:22:26
+export PATH="$PATH:/home/lucho/.local/bin"

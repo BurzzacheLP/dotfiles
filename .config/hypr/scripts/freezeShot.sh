@@ -17,7 +17,11 @@ fi
 grim  "$cacheDir"/"$(date +%Y%m%d-%H%M%S)".png
 
 ## set it to fullscreen and allow the selection
-feh -F "$cacheDir" & slurp | grim -g - - | wl-copy ; killall feh
+
+
+feh -F "$cacheDir" & ffplay -nodisp -autoexit ~/sounds/terminalOpen.mp3 & slurp | grim -g - - | wl-copy ; killall feh  
+
+ffplay -nodisp -autoexit ~/sounds/terminalClose.mp3
 
 rm -r "$cacheDir"
 
