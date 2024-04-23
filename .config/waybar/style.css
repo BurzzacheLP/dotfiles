@@ -1,32 +1,45 @@
 * {
     	/* `otf-font-awesome` is required to be installed for icons */
     	font-family: Menlo, Roboto, Helvetica, Arial, sans-serif;
-   	font-size: 12px;
+   	font-size: 13px;
 	color: #ffffff;
-	padding:0 5px 0 5px;
+	border: none;
+	min-height: 0;
+	margin-top: 0px;
 }
 
 window#waybar {
-	background-color: transparent;
+	background-color: #000000;
 }
 
+
+
+
 .modules-left {
-	padding-left: 0;
-	margin:4px 0px 0px 4px;
+	margin-left: 2px;
 	background-color: #000000;
 }
 
 .modules-center {
-	margin-top: 5px;
 	background-color: #000000;
-	padding: 10px;
 }
 
 .modules-right {
-	/*padding:0 20px 0 20px;
-	*/
-	margin:5px 4px 0px 0px;
+	margin-right: 13px;
 	background-color: #000000;
 }
 
 
+
+#hyprland-workspaces,
+#clock,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#battery,
+#custom-windows {
+	padding-top: 0px;
+}
