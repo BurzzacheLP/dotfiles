@@ -24,7 +24,7 @@ if [ ! -d "${cacheDir}" ] ; then
 
 
 # Generete thumbnails
-for imagen in "$wallFolder"/*.{jpg,jpeg,png,webp}; do
+for imagen in "$wallFolder"/*.{jpg,jpeg,png}; do
 	if [ -f "$imagen" ]; then
 		nombre_archivo=$(basename "$imagen")
 			if [ ! -f "${cacheDir}/${nombre_archivo}" ] ; then
@@ -33,12 +33,13 @@ for imagen in "$wallFolder"/*.{jpg,jpeg,png,webp}; do
     fi
 done
 
-// Launch Rofi
-selectedWall=$(find "${wallFolder}" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" \) -exec basename {} \; | sort | while read -r A ; do  echo -en "$A\x00icon\x1f""${cacheDir}"/"$A\n" ; done | $rofi_command)
+## Launch Rofi
+selectedWall=$(find "${wallFolder}" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png"  \) -exec basename {} \; | sort | while read -r A ; do  echo -en "$A\x00icon\x1f""${cacheDir}"/"$A\n" ; done | $rofi_command)
 
 if [ -n "$selectedWall" ]; then
 	fullWall=$(find "$wallFolder" -name "$selectedWall" -type f)
 	swww img "$fullWall" 
-	wal -i "$fullWall"
-	killall -SIGUSR2 waybar 
+	wal -i "$fullWall" --saturate 0.7
+	killall -SIGUSR2 waybar
+	echo 'inputbar { background-image: url("'$fullWall'"); }' > ${HOME}/.config/rofi/wallpaper.rasi
 fi
