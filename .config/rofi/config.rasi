@@ -1,2 +1,40 @@
+configuration { 
+	font: "JetBrainsMonoNL NF Regular 10";
+}
 
-@theme "/usr/share/rofi/themes/arthur.rasi"
+* {
+	foreground: #ffffff;
+	background: #000000;
+	background-color: #000000;
+	padding: 10px;
+}
+
+window {
+	width: 700px;
+	enabled: true;
+}
+
+
+@import "wallpaper"
+inputbar {
+	enabled: true;
+	padding: 20px;
+	background-color: transparent;
+	
+}
+
+prompt {
+	enabled: false;
+}
+
+listview {
+	lines: 5;
+}
+
+element {
+	background-color: @background;
+}
+
+element alternate normal {
+	background-color: @background;
+}

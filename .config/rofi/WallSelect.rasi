@@ -40,8 +40,14 @@ window {
 
 mainbox {
     enabled:                     true;
-    children:                    ["listview"];
+    children:                    ["inputbar", "listview"];
     background-color:            #00000070;
+}
+
+//----- InputBar -----//
+
+inputbar {
+    enabled: 			false;
 }
 
 //----- Listview -----//
