@@ -1,0 +1,29 @@
+* { 
+	margin: 0;
+	border: 0;
+	font-size: 14px;
+	/* background-color: black;
+	*/
+}
+
+.modules-left {
+	margin: 0px 150px 0px 5px;
+}
+
+.modules-left > widget {
+	border-right: 2px solid;
+	border-color: red;
+}
+
+.modules-right > widget {
+	margin-left: 5px;
+	border-left: 2px solid;
+	border-color: red;
+}
+
+#custom,
+#clock,
+#hyrpland-workspaces,
+#pulseauido {
+
+}

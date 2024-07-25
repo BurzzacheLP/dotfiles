@@ -1,0 +1,63 @@
+{ 
+	"layer": 		"top",
+	"position": 		"top",
+	"height": 		30,
+	"spacing": 		5,
+
+	"modules-left": 	["custom/logo", 
+				"clock",
+				"tray"],
+	"modules-center":	["hyprland/workspaces"],
+	"modules-right":	["pulseaudio"],
+
+	
+	// Left Modules
+	"custom/logo": {
+		"format": "",
+		"tooltip": false
+	},
+
+	"clock": {
+		"timezone": "America/Argentina/Buenos_Aires",
+		"tooltip-format": "<big>{:%Y %B}</big>\n
+				   <tt><small>{calendar}</small></tt>",
+		"format-alt": "{:%d | %m | %Y}"
+	},
+
+	"tray": {
+		"icon-size": 20,
+		"spacing": 10
+	},
+
+	
+	// Center Modules
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"1": "Ⅰ",
+			"2": "Ⅱ",
+			"3": "Ⅲ",
+			"4": "Ⅳ",
+			"5": "Ⅴ",
+			"6": "Ⅵ",
+			"7": "Ⅶ",
+			"8": "Ⅷ",
+			"9": "Ⅸ",
+			"10": "Ⅹ",
+			"urgent": "",
+			"focused": "",
+			"default": ""
+			}
+	},
+
+
+	// Right Modules
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"format-icons":  {	
+			"headphone": "󰋋",
+			"default": ["󰕾","󰖀","󰕿"]
+		},
+		"on-click": "pavucontrol"
+	}
+}
