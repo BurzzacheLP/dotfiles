@@ -13,7 +13,7 @@
 	
 	// Left Modules
 	"custom/logo": {
-		"format": "",
+		"format": "  ",
 		"tooltip": false
 	},
 
@@ -54,10 +54,14 @@
 	// Right Modules
 	"pulseaudio": {
 		"format": "{icon} {volume}%",
-		"format-icons":  {	
-			"headphone": "󰋋",
-			"default": ["󰕾","󰖀","󰕿"]
+		"format-muted": "",
+		"": "",
+		"": "",
+		"": "",
+		"": "",
+		"": "" {
+		}
+			"head
+
 		},
-		"on-click": "pavucontrol"
-	}
 }
