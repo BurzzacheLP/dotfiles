@@ -1,10 +1,9 @@
 * {
-    	/* `otf-font-awesome` is required to be installed for icons */
     	font-family: Menlo, Roboto, Helvetica, Arial, sans-serif;
-   	font-size: 13px;
+   	font-size: 12px;
 	color: #ffffff;
-	border: none;
 	min-height: 0;
+	border: none;
 	margin-top: 0px;
 }
 
@@ -14,24 +13,25 @@ window#waybar {
 
 
 
-
 .modules-left {
-	margin-left: 2px;
+	border: none;
+	margin-left: 8px;
 	background-color: #000000;
 }
 
 .modules-center {
+	border: none;
 	background-color: #000000;
 }
 
 .modules-right {
-	margin-right: 13px;
+	border: none;
+	margin-right: 10px;
 	background-color: #000000;
 }
 
 
-
-#hyprland-workspaces,
+#workspaces,
 #clock,
 #pulseaudio,
 #network,
@@ -40,6 +40,19 @@ window#waybar {
 #temperature,
 #backlight,
 #battery,
+#tray,
 #custom-windows {
-	padding-top: 0px;
+	border: 1px solid;
+	border-color: whitesmoke;
+	background-color: grey;
+	margin: 5px 0 5px 0;
+	padding: 0 10px 0 10px;
+}
+
+#clock {
+	padding-left: 10px;
+}
+
+#mpris {
+	color: #1fd662;
 }

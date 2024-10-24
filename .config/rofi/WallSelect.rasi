@@ -42,12 +42,14 @@ mainbox {
     enabled:                     true;
     children:                    ["inputbar", "listview"];
     background-color:            #00000070;
+    border: 2px solid;
+    border-color: whitesmoke;
 }
 
 //----- InputBar -----//
 
 inputbar {
-    enabled: 			false;
+    enabled: 			true;
 }
 
 //----- Listview -----//
