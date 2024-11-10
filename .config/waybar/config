@@ -4,7 +4,8 @@
     "height": 25, 
     "spacing": 8,
 
-    "modules-left": ["clock",
+    "modules-left": ["custom/logo",
+    		     "clock",
     		     "hyprland/workspaces",
     		     "tray"],
     
@@ -19,6 +20,12 @@
     
     // Modules configuration
 
+     "custom/logo": {
+	"format": "",
+	"interval": "once",
+	"tooltip": false     
+	},
+
      "custom/separator": {
      	"format": "|",
 	"interval": "once",
@@ -27,7 +34,8 @@
 
      "hyprland/workspaces": {
          "format": "{name} {windows}",
-	 "window-rewrite-default": "󱁐",
+	 "format-window-separator": " | ",
+	 "window-rewrite-default": "",
 	 "window-rewrite": {
 	     "class<kitty>": "󰞷",
 	     "class<firefox>": "",
@@ -39,7 +47,7 @@
 
     "mpris": {
 	"interval": 1,
-	"format": "{player_icon} {title} {status_icon} - {position} / {length}",
+	"format": "{player_icon} {title}",
 	"player-icons": {
 		"default": 	"",
 		"spotify": 	"",
@@ -51,7 +59,7 @@
 		"paused": 	"󰐊",
 		"stopped":	"󰓛",
 		},
-
+		
 	"tooltip-format": "{player_icon} {title} - {album} | {artist}",
 
 	//"ignored-players": ["firefox"],
@@ -69,16 +77,17 @@
         "spacing": 10
     },
     "clock": {
+	"format": " {:%H:%M}",
         "timezone": "America/Argentina/Buenos_Aires",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "󰃶 {:%d/%m/%Y}"
     },
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% "
     },
     "temperature": {
         // "thermal-zone": 2,

@@ -9,28 +9,31 @@
 
 window#waybar {
 	background-color: #000000;
+	border: 1px solid;
 }
-
-
 
 .modules-left {
 	border: none;
 	margin-left: 8px;
-	background-color: #000000;
+	padding: 0;
+	background-color: transparent;
 }
 
 .modules-center {
 	border: none;
 	background-color: #000000;
+	background-color: transparent;
 }
 
 .modules-right {
 	border: none;
 	margin-right: 10px;
 	background-color: #000000;
+	background-color: transparent;
 }
 
 
+#custom-logo,
 #workspaces,
 #clock,
 #pulseaudio,
@@ -40,6 +43,7 @@ window#waybar {
 #temperature,
 #backlight,
 #battery,
+#mpris,
 #tray,
 #custom-windows {
 	border: 1px solid;
@@ -49,10 +53,10 @@ window#waybar {
 	padding: 0 10px 0 10px;
 }
 
-#clock {
-	padding-left: 10px;
+#custom-logo {
+	padding-right: 13px;
+	padding-left: 8px;
 }
 
 #mpris {
-	color: #1fd662;
 }
