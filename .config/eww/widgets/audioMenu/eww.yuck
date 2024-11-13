@@ -1,0 +1,44 @@
+(
+	defwindow audioMenu
+	:monitor 0
+	:exclusive "false"
+	:stacking "overlay"
+	:geometry
+	(geometry :anchor "top right")
+	(audioMenu)
+)
+
+(
+	defwidget audioMenu []
+	(
+		box :class "parent" :space-evenly "false" :orientation "v"
+		(
+
+			box :class "header" :space-evenly "false"
+			(label :text "  Switch Device" :class "title")
+			(
+				button
+				:class "exit"
+				:onclick "eww open audioMenu --toggle --config ~/.config/eww/widgets/audioMenu/"
+				(label :text "")
+			)
+		)
+		(
+			box :class "body" :space-evenly "false" :orientation "v"
+			(
+				button
+				:class "button"
+				:vexpand "false"
+				:onclick "./scripts/setDevice.sh alsa_output.pci-0000_29_00.6.analog-stereo"
+				(label :text "󰓃    Speakers")
+			)
+			(
+				button
+				:class "button"
+				:hexpand "false"
+				:onclick "scripts/setDevice.sh alsa_output.usb-DODO_Electronics_Inc._Redragon_Gaming_Headset-00.analog-stereo"
+				(label :text "󰋋    Headphones")
+			)
+		)
+	)
+)

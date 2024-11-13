@@ -59,3 +59,12 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 # Alias
 alias ls='ls --color'
 alias cat='bat'
+
+export PATH=$PATH:/home/lucho/.spicetify
+
+# bun completions
+[ -s "/home/lucho/.bun/_bun" ] && source "/home/lucho/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

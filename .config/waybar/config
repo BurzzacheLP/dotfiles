@@ -145,7 +145,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol",
+        "on-click": "eww open audioMenu --toggle --config ~/.config/eww/widgets/audioMenu/",
 	"ignored-sinks": ["Easy Effects Sink"]
     },
 
