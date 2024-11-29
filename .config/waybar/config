@@ -2,7 +2,7 @@
     "layer": "top", 
     "position": "top",
     "height": 25, 
-    "spacing": 8,
+    "spacing": 5,
 
     "modules-left": ["custom/logo",
     		     "clock",
@@ -146,6 +146,7 @@
             "default": ["", "", ""]
         },
         "on-click": "eww open audioMenu --toggle --config ~/.config/eww/widgets/audioMenu/",
+	"on-click-right": "pavucontrol",
 	"ignored-sinks": ["Easy Effects Sink"]
     },
 

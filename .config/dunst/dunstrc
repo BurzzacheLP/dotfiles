@@ -16,7 +16,7 @@
     origin = top-right
     offset = 41x10
     scale = 0
-    notification_limit = 20
+    notification_limit = 5
 
     ### Progress bar ###
     progress_bar = true
