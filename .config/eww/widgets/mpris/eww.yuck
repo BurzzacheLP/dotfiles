@@ -1,0 +1,57 @@
+(
+	defwindow mpris
+	:monitor 0
+	:exclusive "false"
+	:stacking "overlay"
+	:geometry
+	(geometry :anchor "top center")
+	(mpris)
+)
+
+(
+	defwidget mpris []
+	(
+		box :class "parent" :space-evenly "false" :orientation "h"
+		(
+			box :class "coverArt" :space-evenly "false"
+			(image
+				:class "image"
+				:path cover
+				:image-height 20
+				:image-width 20
+			)
+		
+			box :class "info" :space-evenly "true" :orientation "v"
+			(label
+				:class "title"
+				
+			)
+
+			(label 
+				:class "artist"
+			)
+
+			(label 
+				:class "album"
+			)
+
+			box :class "controls" :space-evenly "true" :orientation "h"
+			(
+			
+			# previous
+			button
+			(	)
+
+			# play / pause
+			button
+			(	)
+
+			# next
+			button
+			(	)
+
+
+			)
+		)
+	)
+)
