@@ -12,9 +12,9 @@
     # width = (0, 300)
     # constant width of 300
     width = 300
-    height = 200
+    height = 150
     origin = top-right
-    offset = 41x10
+    offset = (41, 10)
     scale = 0
     notification_limit = 5
 
@@ -29,11 +29,11 @@
     indicate_hidden = yes
     transparency = 10
     separator_height = 2
-    padding = 8
+    padding = 5
     text_icon_padding = 0
     frame_width = 3
     frame_color = "#aaaaaa"
-    gap_size = 0
+    gap_size = 0 
 
     # Define a color for the separator.
     # possible values are:
@@ -94,7 +94,7 @@
     hide_duplicate_count = false
 
     # Display indicators for URLs (U) and actions (A).
-    show_indicators = yes
+    show_indicators = no
 
     ### Icons ###
 
@@ -108,7 +108,7 @@
     # icon_theme = "Adwaita, breeze"
 
     # Align icons left/right/top/off
-    icon_position = lefttrue
+    icon_position = left
 
     # Scale small icons up to this size, set to 0 to disable. Helpful
     # for e.g. small files or high-dpi screens. In case of conflict,
